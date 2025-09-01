@@ -1,50 +1,50 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import './App.css';
 
 function App() {
-  const [task, setTask] = useState('');
-  const [tasks, setTasks] = useState([]);
+  const [task, setTask] = useState('')
+  const [tasks, setTasks] = useState([])
 
   const addTask = () => {
-    setTasks([...tasks, task]);
-    setTask('');
+    setTasks([...tasks, task])
+    setTask('')
   }
 
   const deleteTask = (deleted) => {
-    const witoutRemoved = tasks.filter(item => item !== deleted);
-    setTasks(witoutRemoved);
+    const withoutRemoved = tasks.filter(item => item !== deleted)
+    setTasks(withoutRemoved)
   }
 
   return (
-    <div id="container">
+    <div>
       <h3>Todos</h3>
       <form>
-        <input 
-          placeholder='Add new task'
-          value={task}
-          onChange={(e) => setTask(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              e.preventDefault()
-              addTask()
-            }
-          }}
-        />
+        <input placeholder='Add new task'
+        value={task}
+        onChange={e => setTask(e.target.value)}
+        onKeyDown={e => {
+          if (e.key === 'Enter') {
+            e.preventDefault()
+            addTask()
+          }
+        }} />
       </form>
       <ul>
-        {tasks.map((item) => (
-          <li key={item}>
-            {item}
-            <button 
-              className="delete-button" 
-              onClick={() => deleteTask(item)}>
-              Delete
-            </button>
-          </li>
-        ))}
+        {
+          tasks.map(item => (
+            <li>{item}
+                <button
+                  className='delete-button'
+                  onClick={() => deleteTask(item)}>
+                    Delete
+                  </button>
+                
+            </li>
+          ))
+        }
       </ul>
-    </div>  
+    </div>
   )
-} 
+}
 
 export default App;
