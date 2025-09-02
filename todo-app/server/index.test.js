@@ -21,7 +21,7 @@ describe("Testing basic database functionality", () => {
  expect(data.description).to.equal(newTask.description)
  })
  it("should delete task", async () => {
- const response = await fetch("http://localhost:3001/delete/16", {
+ const response = await fetch("http://localhost:3001/delete/1", {
     method: "delete"
  })
  const data = await response.json()
