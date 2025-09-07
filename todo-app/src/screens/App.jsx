@@ -30,7 +30,7 @@ function App() {
 
     axios.post(url + '/create', {task: newTask}, headers)
       .then(response => {
-        setTasks(...tasks,response.data)
+        setTasks([...tasks,response.data])
         setTask('')
       })
       .catch(error => {

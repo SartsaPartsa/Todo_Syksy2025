@@ -1,0 +1,16 @@
+import { pool } from "../helper/db.js"
+
+// Hakee käyttäjän sähköpostin perusteella
+const findUserByEmail = async (email) => {
+  return await pool.query("SELECT * FROM account WHERE email = $1", [email])
+}
+
+// Lisää uuden käyttäjän
+const insertUser = async (email, hashedPassword) => {
+  return await pool.query(
+    "INSERT INTO account (email, password) VALUES ($1, $2) RETURNING *",
+    [email, hashedPassword]
+  )
+}
+
+export { findUserByEmail, insertUser }

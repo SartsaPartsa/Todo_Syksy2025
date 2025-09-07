@@ -36,7 +36,10 @@ it("should create a new task", async () => {
  it("should delete task", async () => {
  const response = await fetch("http://localhost:3001/delete/1", {
     method: "delete",
-       Authorization: token
+    headers: { 
+      "Content-Type": "application/json",
+      Authorization: token
+    },
 
  })
  const data = await response.json()
