@@ -1,4 +1,4 @@
-# Todo App
+# Todo-App
 
 **Tekijä:** Sara Vehviläinen  
 **Koulu:** Oulun ammattikorkeakoulu  
