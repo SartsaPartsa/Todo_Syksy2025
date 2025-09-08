@@ -50,27 +50,7 @@ Projekti koostuu kahdeksasta osasta, ja kaikki osat on toteutettu tässä reposi
 - **Autentikointi:** bcrypt, JSON Web Token (JWT)  
 - **Testaus:** Mocha, Chai  
 
-## 🚀 Asennus ja käyttö
 
-1. Kloonaa repo:
-   ```bash
-   git clone https://github.com/SartsaPartsa/Todo_Syksy2025.git
-
-2. Asenna riippuvuudet sekä client- että server-hakemistoissa
-   ```bash
-      npm install
-
-3. Käynnistä backend (server-kansiossa)
-   ```bash
-      npm run devStart
-
-4. Käynnistä frontend (client- tai ToDo-App -kansiossa)
-   ```bash
-      npm run dev
-
-5. Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa  
-   
-    yleensä:  **http://localhost:5173**
 
 
 
