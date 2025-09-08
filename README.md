@@ -1,50 +1,72 @@
-# 📝 Todo-App
+# Todo_Syksy2025
 
-**Tekijä:** Sara Vehviläinen  
-**Koulu:** Oulun ammattikorkeakoulu  
+## Tekijä : Sara Vehviläinen
 
----
+Tämä on Oulun ammattikorkeakoulun syksyn 2025 tehtäväprojekti, jossa toteutetaan **Todo-sovellus** vaiheittain.  
+Projekti koostuu kahdeksasta osasta, ja kaikki osat on toteutettu tässä repositoriossa.
 
-## 📂 Projektin rakenne
+-----
 
-- todoapp/ – Sovelluksen pääkansio, jossa React + Vite -koodi
-- node_modules/ – Riippuvuudet (luodaan npm install -komennolla)
-- package.json – Projektin asetukset ja skriptit
+## 📌 Projektin sisältö
 
----
+1. **React-frontend**  
+   Perus Todo-lista käyttöliittymällä.
 
-## ⚙️ Asennus
+2. **Express-backend ja PostgreSQL-tietokanta**  
+   Taustapalvelu, joka tallettaa tehtävät Postgres-kantaan.
 
-Asenna projektin riippuvuudet:
+3. **Testaus Mocha- ja Chai-kirjastoilla**  
+   Automaattisia testejä backendille.
 
+4. **Frontend ja backend yhdistetty**  
+   Axios-kirjastolla selain ja palvelin keskustelevat keskenään.
+
+5. **Ympäristömuuttujat ja projektin siistiminen**  
+   Kehitys- ja testitilat eritelty, koodin rakenne siistitty.
+
+6. **Käyttäjien hallinta**  
+   Rekisteröityminen ja kirjautuminen.  
+   Salasanojen salaus `bcrypt`-kirjastolla.  
+   Käyttäjän tunnistus JSON Web Tokenin avulla.
+
+7. **Frontendin autentikointi ja suojatut reitit**  
+   React Routerilla toteutetut kirjautumissivut ja suojatut reitit.  
+   Estetään Todo-listan käyttö ilman sisäänkirjautumista.
+
+8. **MVC-rakenne backendissä**  
+   Backend jaettu selkeisiin kerroksiin:  
+   - **Models** (SQL-kyselyt)  
+   - **Controllers** (sovelluslogiikka)  
+   - **Routes** (reitit)  
+   Koodi on nyt modulaarinen ja helppo ylläpitää.
+
+-----
+
+## 🛠 Käytetyt teknologiat
+
+- **Frontend:** React, React Router, Axios  
+- **Backend:** Node.js, Express  
+- **Tietokanta:** PostgreSQL  
+- **Autentikointi:** bcrypt, JSON Web Token (JWT)  
+- **Testaus:** Mocha, Chai  
+
+## 🚀 Asennus ja käyttö
+
+1. Kloonaa repo:
+   ```bash
+   git clone https://github.com/SartsaPartsa/Todo_Syksy2025.git
+
+2. Asenna riippuvuudet sekä client- että server-hakemistoissa
 npm install
 
----
+3. Käynnistä backend (server-kansiossa)
+npm run devStart
 
-## 🚀 Kehitystilassa ajaminen
-
-Käynnistä sovellus kehitystilassa:
-
+4. Käynnistä frontend (client- tai ToDo-App -kansiossa)
 npm run dev
 
-Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa (yleensä http://localhost:5173).
-
----
-
-## ✅ TodoApp – Käyttöohjeet
-
-TodoApp mahdollistaa:
-
-- Tehtävien lisäämisen – Kirjoita tehtävä tekstikenttään ja paina Enter
-- Tehtävien merkitsemisen tehdyiksi – Klikkaa tehtävän valintaruutua
-- Tehtävien poistamisen – Klikkaa roskakorikuvaketta
-
----
-
-## 🛠 Teknologiat ja riippuvuudet
-
-- React – Sovelluksen käyttöliittymä
-- Vite – Nopea kehitysympäristö ja bundlaus
+5. Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa  (yleensä http://localhost:5173)
+http://localhost:5173
 
 
 
