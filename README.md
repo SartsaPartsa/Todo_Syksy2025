@@ -57,13 +57,13 @@ Projekti koostuu kahdeksasta osasta, ja kaikki osat on toteutettu tässä reposi
    git clone https://github.com/SartsaPartsa/Todo_Syksy2025.git
 
 2. Asenna riippuvuudet sekä client- että server-hakemistoissa
-npm install
+**npm install**
 
 3. Käynnistä backend (server-kansiossa)
-npm run devStart
+**npm run devStart**
 
 4. Käynnistä frontend (client- tai ToDo-App -kansiossa)
-npm run dev
+**npm run dev**
 
 5. Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa  (yleensä http://localhost:5173)
 http://localhost:5173
