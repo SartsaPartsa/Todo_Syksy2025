@@ -38,7 +38,7 @@ Projekti koostuu kahdeksasta osasta, ja kaikki osat on toteutettu tässä reposi
    - **Models** (SQL-kyselyt)  
    - **Controllers** (sovelluslogiikka)  
    - **Routes** (reitit)  
-   Koodi on nyt modulaarinen ja helppo ylläpitää.
+   Koodi on nyt jaettu selkeisiin osiin ja sitä on helppo ylläpitää.
 
 -----
 
