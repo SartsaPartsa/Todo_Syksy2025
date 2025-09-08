@@ -58,19 +58,19 @@ Projekti koostuu kahdeksasta osasta, ja kaikki osat on toteutettu tässä reposi
 
 2. Asenna riippuvuudet sekä client- että server-hakemistoissa
    ```bash
-      **npm install**
+      npm install
 
 3. Käynnistä backend (server-kansiossa)
    ```bash
-      **npm run devStart**
+      npm run devStart
 
 4. Käynnistä frontend (client- tai ToDo-App -kansiossa)
    ```bash
-      **npm run dev**
+      npm run dev
 
-5. Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa  (yleensä http://localhost:5173)
+5. Avaa selain ja siirry osoitteeseen, joka näkyy terminaalissa  
    
-      **http://localhost:5173**
+    yleensä:  **http://localhost:5173**
 
 
 
