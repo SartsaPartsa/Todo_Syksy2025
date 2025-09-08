@@ -2,7 +2,6 @@
 
 **Tekijä:** Sara Vehviläinen  
 **Koulu:** Oulun ammattikorkeakoulu  
-**Todo_Syksy2025** on yksinkertainen tehtävienhallintasovellus Reactilla ja Vite:llä. Sovellus mahdollistaa tehtävien lisäämisen, poistamisen ja merkitsemisen tehdyiksi.
 
 ---
 
