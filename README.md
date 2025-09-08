@@ -19,12 +19,6 @@ Asenna projektin riippuvuudet:
 
 npm install
 
-Vaihtoehtoisesti voit käyttää myös:
-
-yarn install
-# tai
-pnpm install
-
 ---
 
 ## 🚀 Kehitystilassa ajaminen
